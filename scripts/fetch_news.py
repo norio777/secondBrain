@@ -35,7 +35,7 @@ def summarize_with_gemini(raw_text):
     
     # 無料枠で利用可能な最新の推奨モデルを使用
     response = client.models.generate_content(
-        model='gemini-2.5-flash-lite',
+        model=''gemini-3.8-flash',
         contents=prompt,
     )
     return response.text
