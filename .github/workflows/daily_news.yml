@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout secondBrain
+      - name: Checkout MySecondBrain
         uses: actions/checkout@v4
         with:
-          # 別リポジトリの場合は repository: 'ユーザー名/secondBrain' と token: ${{ secrets.GH_PAT }} を指定
+          # 別リポジトリの場合は repository: 'ユーザー名/MySecondBrain' と token: ${{ secrets.GH_PAT }} を指定
           fetch-depth: 0
 
       - name: Set up Python
