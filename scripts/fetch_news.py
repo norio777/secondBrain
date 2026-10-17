@@ -7,7 +7,7 @@ from google import genai
 def fetch_raw_news():
     """ニュースサイトから情報を取得（例としてRSSや特定のHTMLをパース）"""
     # ここに対象のニュースサイトのURLやRSSを入力します
-    url = "https://magazine.algomatic.jp" 
+    url = "https://www.theverge.com/rss/index.xml" 
     response = requests.get(url)
     soup = BeautifulSoup(response.content, "xml")
     
